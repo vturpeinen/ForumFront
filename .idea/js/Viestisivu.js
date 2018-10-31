@@ -1,14 +1,10 @@
-//
-// var baseurl="http://localhost:8080/users";
-// var loppuurl = "http://localhost:8080/messages";
-
 
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
         if (xhr.status === 200) {
             var vastaus = JSON.parse(xhr.responseText);
-//                var vastaus = JSON.stringify(tulos);
+
             console.dir(vastaus);
 
             for (var i = 0; i < vastaus.length; i++) {
@@ -31,12 +27,3 @@ xhr.onreadystatechange = function () {
 };
 xhr.open('GET', 'http://localhost:8080/messages');
 xhr.send(null);
-
-
-//
-// function kasitteletulos(tulos) {
-//     while(lista.firstChild) {
-//         lista.removeChild(Lista.firstChild);
-//     }
-// }
-// var lista = document.getElementById("lista");

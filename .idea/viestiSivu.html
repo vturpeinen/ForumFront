@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css\tyyli.css"/>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
     <title>Viestikokeilu</title>
 </head>
 <body>
@@ -16,15 +20,19 @@
     </ol>
 
 </div>
+
 <div class="ViestiKentta">
-    <form action="/action_page.php" id="usrform">
-        Name: <input type="text" name="usrname">
-        <input type="submit">
+    <form method="POST" action="post-handler.php" onsubmit="return lahetys(this);" id="usrform">
+        label: <input type="text" name="name" id="label">
+        <textarea name="content" form="usrform" id="content">Kirjoita tähän</textarea>
+        <input type="button" value="Update" onclick="lahetaClick()">
     </form>
 
-    <textarea name="comment" form="usrform">Kirjoita tähän</textarea>
 </div>
 <script src="js/Viestisivu.js">
 </script>
+    <script src="js/ViestinLahetys.js">
+</script>
+
 </body>
 </html>
