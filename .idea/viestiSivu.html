@@ -3,40 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css\tyyli.css"/>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+
     <title>Viestikokeilu</title>
 </head>
 <body>
-<!--<ol id="lista">-->
-
-<!--</ol>-->
-
 <div class="vanhojenViestienNaytto">
-    <ol class="viestit" id="lista">
-
-    </ol>
-
+    <ol class="viestit" id="lista"></ol>
 </div>
 
-<div class="ViestiKentta">
+<div class="ViestinLisaaminen">
     <form method="POST" action="post-handler.php" onsubmit="return lahetys(this);" id="usrform">
-        label: <input type="text" name="name" id="label">
-        <textarea name="content" form="usrform" id="content">Kirjoita tähän</textarea>
-        <input type="button" value="Update" onclick="lahetaClick()">
+        Otsikko: <input type="text" name="name" id="label">
+        <textarea name="content" form="usrform" id="content">Kirjoita viesti:</textarea>
+        <input type="button" value="Lähetä" onclick="lahetaClick()">
     </form>
 </div>
 
 <div class="PoistoKentta">
     <form method="DELETE" action="post-handler.php" onsubmit="return poista(this);" id="usrform">
         Poistettavan viestin nro: <input type="text" name="name" id="id">
-        <input type="button" value="Update" onclick="poistaClick()">
+        <input type="button" value="Poista viesti" onclick="poistaClick()">
     </form>
 </div>
 
-<script src="js/Poisto.js.js">
+<script src="js/Poisto.js">
 </script>
 <script src="js/Viestisivu.js">
 </script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;        }
+        * {
+            box-sizing: border-box 100%;        }
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width:100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+        a {
+            color: dodgerblue;
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<form method="POST" action="/post-handler.php" onsubmit="return Kayttajanlahetys(this);" id="kayform">
+    <div class="container">
+        <h1>Tervetuloa</h1>
+        <p>Rekisteröidy antamalla tiedot.</p>
+        <hr>
+
+        <label for="name"><b>Nimi</b></label>
+        <input type="text" placeholder="Koko nimi" name="name" required id="name">
+
+        <label for="username"><b>Käyttäjänimi</b></label>
+        <input type="text" placeholder="Käyttäjänimi" name="username" required  id="username">
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Sähköposti" name="email" required id="email">
+
+        <label for="psw"><b>Salasana</b></label>
+        <input type="password" placeholder="Salasana" name="password" required id="password">
+
+        <label for="psw-repeat"><b>Salasana uudestaan</b></label>
+        <input type="password" placeholder="Toista salasana" name="password-repeat" required>
+        <hr>
+        <button type="button" value="Lähetä" onclick="lahetaKaytClick()" class="registerbtn" >Lähetä</button>
+        <a href="Login.html">Siirry loginiin</a>
+
+    </div>
+</form>
+
+    <div class="container signin">
+        <p>Onko sinulla on jo tili?<a href="#">Kirjaudu</a>.</p>
+    </div>
+
+<script src="js/KayttajanLahetys.js">
+</script>
+
+</body>
+</html>
