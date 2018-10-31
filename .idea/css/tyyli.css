@@ -1,0 +1,53 @@
+
+
+textarea { position: center;
+            width: 400px; height: 300px; border: 2px solid b;
+}
+
+li:nth-of-type(2n) {
+    border: 2px solid black;
+    border-color: darkblue;
+    background-color: deeppink;
+    float: right;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    content: "";
+    clear: both;
+    display: table;
+    color: #aaa;
+}
+
+li:nth-of-type(2n+1) {
+    border: 2px solid black;
+    border-color: darkblue;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    content: "";
+    clear: both;
+    display: table;
+    float: left;
+    color: #999;
+}
+
+/*!* Style images *!*/
+/*.container img {*/
+/*float: left;*/
+/*max-width: 60px;*/
+/*width: 100%;*/
+/*margin-right: 20px;*/
+/*border-radius: 50%;*/
+/*}*/
+
+/*!* Style the right image *!*/
+/*.container img.right {*/
+/*float: right;*/
+/*margin-left: 20px;*/
+/*margin-right:0;*/
+/*}*/
+
+/* Style time text */
+
+/* Style time text */
