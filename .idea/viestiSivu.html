@@ -27,8 +27,17 @@
         <textarea name="content" form="usrform" id="content">Kirjoita tähän</textarea>
         <input type="button" value="Update" onclick="lahetaClick()">
     </form>
-
 </div>
+
+<div class="PoistoKentta">
+    <form method="DELETE" action="post-handler.php" onsubmit="return poista(this);" id="usrform">
+        Poistettavan viestin nro: <input type="text" name="name" id="id">
+        <input type="button" value="Update" onclick="poistaClick()">
+    </form>
+</div>
+
+<script src="js/Poisto.js.js">
+</script>
 <script src="js/Viestisivu.js">
 </script>
     <script src="js/ViestinLahetys.js">
