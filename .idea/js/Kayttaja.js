@@ -6,9 +6,7 @@ xhr.onreadystatechange = function () {
             var kayttaja = JSON.parse(xhr.responseText);
 
             console.dir(kayttaja);
-
             for (var i = 0; i < kayttaja.length; i++) {
-
                 var kayttajaLista = kayttaja[i];
                 var listanHakuK = document.getElementById("listaK");
                 var listanLuontiK = document.createElement("liK");
