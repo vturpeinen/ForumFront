@@ -1,0 +1,114 @@
+h1 {
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://images.pexels.com/photos/1353939/pexels-photo-1353939.jpeg?cs=srgb&dl=branch-color-green-1353939.jpg&fm=jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 16px;
+    background-color: #f8f1ec;
+    background-position: center;
+    padding-left: 20px;
+}
+
+input fields {
+
+    width:100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+textarea { position: center;
+    width: 400px; height: 300px; border: 2px solid;
+}
+
+li:nth-of-type(2n) {
+    border: 2px solid black;
+    border-color: darkblue;
+    background-color: deeppink;
+    float: right;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    content: "";
+    clear: both;
+    display: table;
+    color: #aaa;
+}
+
+li:nth-of-type(2n+1) {
+    border: 2px solid black;
+    border-color: darkblue;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    content: "";
+    clear: both;
+    display: table;
+    float: left;
+    color: #999;
+}
+
+
+/*!* Style images *!*/
+/*.container img {*/
+/*float: left;*/
+/*max-width: 60px;*/
+/*width: 100%;*/
+/* border-radius: 50%;*/
+/*}*/
+
+/*!* Style the right image *!*/
+/*.container img.right {*/
+/*float: right;*/
+/*margin-left: 20px;*/
+/*margin-right:0;*/
+/*}*/
+
+/* Style time text */
+
+/* Style time text */

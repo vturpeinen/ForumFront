@@ -1,3 +1,4 @@
+var userId = localStorage.getItem("id", id)
 
 function lahetaClick() {
     console.log("Click");
@@ -6,7 +7,8 @@ function lahetaClick() {
         "content": $("#content").val(),
         "id": 5,
         "ttimestamp": "2018-11-22",
-        "ggroup": "Ryhmähau"
+        "ggroup": "Ryhmähau",
+        // "userId": userId
     });
     lahetys(data);
 }

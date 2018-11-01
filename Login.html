@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css\tyyli.css"/>
+    <link rel="stylesheet" href="css\LoginTyyli.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
@@ -10,26 +10,21 @@
     <title>Sisäänkirjautuminen</title>
 </head>
 <body>
+<div id="form">
+    <div id="container">
 <form action="action_page.php">
-
     <div class="container">
         <label><b>Käyttäjätunnus</b></label>
         <input type="text" placeholder="Kayttajanimi" name="kayttajanimi" required  id="username">
-
         <label><b>Salasana</b></label>
         <input type="password" placeholder="Salasana" name="password" required id="password">
         <button type="button" value="Kerää käyttäjänimi ja salasana" onclick="keraaKayttajaNimi()">Kirjaudu sisään</button>
-
     </div>
-
     <div class="container" style="background-color:#f1f1f1">
         <a href="Register.html"><button type="button" class="cancelbtn">Rekisteröidy</button></a>
-        <a href="testisivu.html"><button type="button" class="cancelbtn">Siirry tuloksiin</button></a>
-        <!--<span class="psw">Unohditko <a href="#">salasanan?</a></span>-->
+        <a href="viestiSivu.html"><button type="button" class="cancelbtn">Viestit</button></a>
     </div>
 </form>
-
-<script src="js/KayttajaHallinta.js">
-</script>
+<script src="js/KayttajaHallinta.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-color: forestgreen;
+    background-image: url(https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?cs=srgb&dl=branch-bright-freshness-1353938.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+
+
+}
+.ViestinLisaaminen {
+    background-position: center top;
+
+}
+.PoistoKentta {
+
+}
+ol {
+
+}
+/*#fba919; GREENDEALIN ORANSSI*/
