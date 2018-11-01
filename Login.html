@@ -1,25 +1,35 @@
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css\tyyli.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\tyyli.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+    <title>Sisäänkirjautuminen</title>
+</head>
+<body>
 <form action="action_page.php">
-    <!--<div class="imgcontainer">-->
-        <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
-    <!--</div>-->
 
     <div class="container">
-        <label for="uname"><b>Käyttäjätunnus</b></label>
-        <input type="text" placeholder="Käyttajänimi" name="uname" required>
+        <label><b>Käyttäjätunnus</b></label>
+        <input type="text" placeholder="Kayttajanimi" name="kayttajanimi" required  id="username">
 
-        <label for="psw"><b>Salasana</b></label>
-        <input type="password" placeholder="Salasana" name="psw" required>
+        <label><b>Salasana</b></label>
+        <input type="password" placeholder="Salasana" name="password" required id="password">
+        <button type="button" value="Kerää käyttäjänimi ja salasana" onclick="keraaKayttajaNimi()">Kirjaudu sisään</button>
 
-        <button type="submit">Kirjaudu sisään</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Muista minut
-        </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
         <a href="Register.html"><button type="button" class="cancelbtn">Rekisteröidy</button></a>
+        <a href="testisivu.html"><button type="button" class="cancelbtn">Siirry tuloksiin</button></a>
         <!--<span class="psw">Unohditko <a href="#">salasanan?</a></span>-->
     </div>
 </form>
+
+<script src="js/KayttajaHallinta.js">
+</script>
+</body>
+</html>
