@@ -1,7 +1,7 @@
 function poistaClick() {
     console.log("Click");
     var data = JSON.stringify({
-        "id": $("#id").val(),
+        "id":  $("#id").val(),
     });
     poisto(data);
 }
@@ -12,7 +12,7 @@ function poisto(data) {
             console.log(this.responseText);
         }
     });
-    xhr.open("DELETE", "http://localhost:8080/messages/" + $("#id"));
+    xhr.open("DELETE", "http://localhost:8080/messages/" + $("#id").val());
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
 }

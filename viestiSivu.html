@@ -7,19 +7,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-
     <title>Viestittele</title>
 </head>
 <body>
+<span id="kn"></span>
+
 <div class="ViestinLisaaminen">
     Otsikko: <input type="text" name="name" id="label">
     <form method="POST" action="post-handler.php" onsubmit="return lahetys(this);" id="usrform">
-
-        <textarea rows="20" cols="50" name="content" form="usrform" id="content">Kirjoita viesti:</textarea>
+        <textarea rows="15" cols="50" name="content" form="usrform" id="content"></textarea>
         <input type="button" value="Lähetä" onclick="lahetaClick(), window.location.reload()">
     </form>
 </div>
-
 <div class="PoistoKentta">
     <form method="DELETE" action="post-handler.php" onsubmit="return poista(this);" id="usrform">
         Poista viesti numerolla: <input type="text" name="name" id="id">
@@ -32,13 +31,10 @@
 <form method="logout" action="post-handler.php" onsubmit="return poista(this);" id="usrform">
     <a href="Login.html" ><input type="button" value="Kirjaudu ulos" onclick="logClick()"></a>
 </form>
-
-    <script src="js/Poisto.js">
-</script>
-<script src="js/Viestisivu.js">
-</script>
-    <script src="js/ViestinLahetys.js">
-</script>
+<script src="js/Poisto.js"></script>
+<script src="js/Viestisivu.js"></script>
+<script src="js/ViestinLahetys.js"></script>
+<script src="js/ViestienHakuSisallolla.js"></script>
 
 </body>
 </html>

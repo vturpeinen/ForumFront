@@ -6,14 +6,13 @@ function keraaKayttajaNimi() {
     $.getJSON(url, function (data) {
         console.dir(data[0]);
         var username = $("#username").val();
-
-
         localStorage.setItem("id", data[0].id)
         localStorage.setItem("username", username)
+
     });
 }
 
-
+//Document GetElemeny
 
 
 
