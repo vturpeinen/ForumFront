@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <h1>Viestien kirjoitus</h1>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css\ViestiTyyli.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
@@ -15,7 +16,7 @@
     <form method="POST" action="post-handler.php" onsubmit="return lahetys(this);" id="usrform">
 
         <textarea rows="20" cols="50" name="content" form="usrform" id="content">Kirjoita viesti:</textarea>
-        <input type="button" value="Lähetä" onclick="lahetaClick()">
+        <input type="button" value="Lähetä" onclick="lahetaClick(), window.location.reload()">
     </form>
 </div>
 
@@ -28,6 +29,9 @@
     <div class="vanhojenViestienNaytto">
         <ol class="viestit" id="lista"></ol>
     </div>
+<form method="logout" action="post-handler.php" onsubmit="return poista(this);" id="usrform">
+    <a href="Login.html" ><input type="button" value="Kirjaudu ulos" onclick="logClick()"></a>
+</form>
 
     <script src="js/Poisto.js">
 </script>

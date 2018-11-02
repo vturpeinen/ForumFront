@@ -12,7 +12,11 @@ function poisto(data) {
             console.log(this.responseText);
         }
     });
-    xhr.open("DELETE", "http://localhost:8080" + $("#id"));
+    xhr.open("DELETE", "http://localhost:8080/messages/" + $("#id"));
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
+}
+function logClick() {
+    console.log("Click");
+    localStorage.clear();
 }

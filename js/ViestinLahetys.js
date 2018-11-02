@@ -3,8 +3,8 @@ var userId = localStorage.getItem("id", id)
 function lahetaClick() {
     console.log("Click");
     var data = JSON.stringify({
-        "label":  $("#label").val(),
         "content": $("#content").val(),
+        "label":  $("#label").val(),
         "id": 5,
         "ttimestamp": "2018-11-22",
         "ggroup": "Ryhmähau",
